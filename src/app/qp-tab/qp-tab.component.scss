@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--color-secondary);
+  max-width: 71.8rem;
+  height: 99rem;
+  margin: 0 auto;
+}
+
+.tabs {
+  position: relative;
+  max-width: 68.8rem; // 688px;
+  height: 97rem; // 970px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  margin: 0 auto;
+  margin-top: 12.1rem; // 121px;
+  padding-top: 1rem;
+}
+.tab {
+  font: normal normal 25px/58px Segoe UI;
+  color: white;
+}
+.tab label {
+  padding: 1rem;
+  position: relative;
+  width: 22.2rem; // 222px;
+}
+.tab [type="radio"] {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 5.5rem; // 55px;
+  left: 0;
+  background-color: #29333f;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+}
+[type="radio"]:checked ~ label {
+  background-color: #29333f;
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}

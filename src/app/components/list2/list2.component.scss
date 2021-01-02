@@ -1,0 +1,70 @@
+.qp {
+  background-color: var(--color-primary);
+  padding: 3rem;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  width: fit-content;
+  height: 45.5rem; // 455px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: --bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 26rem; // 260px;
+
+    @media only screen and (max-width: --bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @media only screen and (max-width: --bp-small) {
+      grid-template-columns: min-content max-content;
+    }
+  }
+
+  &__img {
+    width: 7rem;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__details {
+    width: 16.8rem; // 168px;
+    height: 4.5rem; // 45px;
+  }
+
+  &__num {
+    text-transform: uppercase;
+    color: var(--color-grey-light-2); // $color-grey-light-2;
+    margin-top: -3.5rem;
+    font: normal normal 18px/58px Segoe UI;
+    color: var(--color-white);
+  }
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 7.8rem; // 78px;
+  align-items: end;
+}
+
+.logo-icon {
+  width: 5.4rem; // 54px;
+  height: 7.7rem; // 77px;
+}
+
+.heading-4 {
+  font: normal normal 14px/58px Segoe UI;
+  letter-spacing: 1.4px;
+
+  &--light {
+    color: var(--color-grey-light-1); // $color-grey-light-1;
+  }
+}
