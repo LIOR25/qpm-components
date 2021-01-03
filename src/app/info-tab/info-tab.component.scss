@@ -1,0 +1,40 @@
+.continer {
+  display: flex;
+  margin: 0 auto;
+  background: #3f4e60 0% 0% no-repeat padding-box;
+}
+
+.continer-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 7rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.list:not(:last-child) {
+  border-bottom: 1px solid #6c83a1;
+}
+
+.first-span {
+  width: 27.8rem;
+  text-align: right;
+  font: normal normal normal 14px/57px Segoe UI;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.second-span {
+  width: 27.7rem; // 277px;
+  text-align: right;
+  font: normal normal bold 18px/58px Segoe UI;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  text-transform: capitalize;
+}

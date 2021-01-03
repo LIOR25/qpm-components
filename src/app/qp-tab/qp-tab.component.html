@@ -4,7 +4,7 @@
       <input type="radio" id="tab-1" name="tab-group-1" checked>
       <label for="tab-1">QP</label>
       <div class="content">
-        <app-list [qpArr]='qpArr'></app-list>
+        <app-list [data]='qpArr'></app-list>
         <app-list2></app-list2>
       </div>
     </div>
@@ -12,7 +12,23 @@
       <input type="radio" id="tab-2" name="tab-group-1">
       <label for="tab-2">מידע</label>
       <div class="content">
-        stuff
+        <div class="qp__list">
+          <div class="logo-box">
+            <svg class="logo-icon">
+              <use xlink:href="../../assets/sprite.svg#icon-Asset-3"></use>
+            </svg>
+            <div class="qp__details">
+              <h4 class="heading-4 heading-4--light">מתחם הספורטאים</h4>
+              <p class="qp__num">1235</p>
+            </div>
+          </div>
+        </div>
+        <div class="info1">
+          <app-info [data]='infoArr'></app-info>
+        </div>
+        <div class="info2">
+          <app-info [data]='infoArr2'></app-info>
+        </div>
       </div>
     </div>
     <div class="tab">

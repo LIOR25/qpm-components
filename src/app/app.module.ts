@@ -10,6 +10,7 @@ import { ListComponent } from './components/list/list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QpTabComponent } from './qp-tab/qp-tab.component';
 import { List2Component } from './components/list2/list2.component';
+import { InfoTabComponent } from './info-tab/info-tab.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { List2Component } from './components/list2/list2.component';
     HomePageComponent,
     ListComponent,
     QpTabComponent,
-    List2Component
+    List2Component,
+    InfoTabComponent
   ],
   imports: [
     BrowserModule,
