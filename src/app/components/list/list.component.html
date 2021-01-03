@@ -5,25 +5,9 @@
     </svg>
   </div>
   <div class="continer-list">
-    <div class="list">
-      <span class="first-span">QP שם</span>
-      <span class="second-span">14</span>
-    </div>
-    <div class="list">
-      <span class="first-span">מזהה</span>
-      <span class="second-span">106</span>
-    </div>
-    <div class="list">
-      <span class="first-span">סוג</span>
-      <span class="second-span">שיקום שוחות</span>
-    </div>
-    <div class="list">
-      <span class="first-span">נוצר ב</span>
-      <span class="second-span">20200804_150540</span>
-    </div>
-    <div class="list">
-      <span class="first-span">מספר אי התאמות</span>
-      <span class="second-span">15</span>
+    <div class="list" *ngFor="let qp of qpArr">
+      <span class="first-span">{{qp.name}}</span>
+      <span class="second-span">{{qp.name2}}</span>
     </div>
   </div>
 </div>
