@@ -1,0 +1,65 @@
+.message-conteinar {
+  width: 643px;
+  height: 170px;
+  background: #3f4e60 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 5px;
+}
+
+.message-btn-conteinar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 40px;
+  height: 170px;
+  background-color: #689cd8;
+  border: none;
+}
+
+.btn-right {
+  order: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.message-header {
+  display: flex;
+  flex-direction: column;
+  width: 2px;
+  height: 65px;
+  color: white;
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
+.message-date {
+  font: normal normal normal 14px/19px Segoe UI;
+  width: 180px;
+  margin-left: 36rem;
+}
+.message-name {
+  width: 179px;
+  margin-left: 36rem;
+  font: normal normal bold 18px/24px Segoe UI;
+}
+
+.message {
+  width: 533px;
+  height: 75px;
+  background-color: black;
+  color: white;
+  font: normal normal normal 18px/24px Segoe UI;
+  text-align: right;
+  padding: 1rem;
+  align-self: flex-end;
+  margin: 1.5rem;
+  border-radius: 5px;
+}

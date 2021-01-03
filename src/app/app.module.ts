@@ -11,6 +11,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { QpTabComponent } from './qp-tab/qp-tab.component';
 import { List2Component } from './components/list2/list2.component';
 import { InfoTabComponent } from './info-tab/info-tab.component';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +20,16 @@ import { InfoTabComponent } from './info-tab/info-tab.component';
     ListComponent,
     QpTabComponent,
     List2Component,
-    InfoTabComponent
+    InfoTabComponent,
+    MessageComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
-    MatTabsModule
+    MatTabsModule,
   ],
   exports: [CommonModule, MatTabsModule],
   providers: [],
