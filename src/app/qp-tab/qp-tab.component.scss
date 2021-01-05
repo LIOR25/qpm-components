@@ -26,6 +26,11 @@
   padding: 1rem;
   position: relative;
   width: 22.2rem; // 222px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  cursor: pointer;
 }
 
 .tab [type="radio"] {
@@ -39,7 +44,7 @@
   position: absolute;
   top: 6.5rem; // 55px;
   left: 0;
-  background-color: #29333f;
+  background-color: var(--color-primary);
   right: 0;
   bottom: 0;
   padding: 2rem;
@@ -47,7 +52,7 @@
 }
 
 [type="radio"]:checked ~ label {
-  background-color: #29333f;
+  background-color: var(--color-primary);
   z-index: 2;
   border-radius: 5px;
 }
@@ -99,14 +104,13 @@
   }
 
   &__details {
-    // width: 16.8rem; // 168px;
     height: 4.5rem; // 45px;
     width: 208px;
   }
 
   &__num {
     text-transform: uppercase;
-    color: var(--color-grey-light-2); // $color-grey-light-2;
+    color: var(--color-grey-light-2);
     margin-top: -3.5rem;
     font: normal normal 22px/58px Segoe UI;
     color: var(--color-white);
@@ -134,6 +138,6 @@
   letter-spacing: 1.4px;
 
   &--light {
-    color: var(--color-grey-light-1); // $color-grey-light-1;
+    color: var(--color-grey-light-1);
   }
 }

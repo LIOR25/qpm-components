@@ -1,0 +1,29 @@
+<div class="continer">
+  <div class="input-logo">
+    <div class="logo-box">
+      <svg class="logo-icon red-flame">
+        <use xlink:href="../../assets/sprite.svg#icon-red-flame"></use>
+      </svg>
+      <div class="numberCircle">5</div>
+    </div>
+    <form>
+      <input type="text" placeholder="חפש">
+    </form>
+  </div>
+  <div class="continer-list">
+    <div class="list" *ngFor="let issue of data">
+      <svg class="logo-icon">
+        <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
+      </svg>
+      <span class="first-span">{{issue.name}}</span>
+      <span class="second-span">{{issue.name2}}</span>
+    </div>
+    <div class="list">
+      <svg class="logo-icon small-red-flame">
+        <use xlink:href="../../assets/sprite.svg#icon-small-red-flame"></use>
+      </svg>
+      <span class="first-span">2070</span>
+      <span class="second-span">תלונות: פניות הציבור</span>
+    </div>
+  </div>
+</div>

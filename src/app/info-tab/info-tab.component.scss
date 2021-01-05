@@ -1,7 +1,7 @@
 .continer {
   display: flex;
   margin: 0 auto;
-  background: #3f4e60 0% 0% no-repeat padding-box;
+  background: var(--color-grey-dark-1) 0% 0% no-repeat padding-box;
 }
 
 .continer-list {
@@ -18,7 +18,7 @@
 }
 
 .list:not(:last-child) {
-  border-bottom: 1px solid #6c83a1;
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 .first-span {

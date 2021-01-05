@@ -1,7 +1,7 @@
 .message-conteinar {
   width: 643px;
   height: 170px;
-  background: #3f4e60 0% 0% no-repeat padding-box;
+  background: var(--color-grey-dark-1) 0% 0% no-repeat padding-box;
   margin: 0 auto;
   margin-top: 4rem;
   border-radius: 5px;
@@ -15,8 +15,9 @@
 .btn {
   width: 40px;
   height: 170px;
-  background-color: #689cd8;
+  background-color: var(--color-blue);
   border: none;
+  cursor: pointer;
 }
 
 .btn-right {
@@ -35,7 +36,7 @@
   flex-direction: column;
   width: 2px;
   height: 65px;
-  color: white;
+  color: var(--color-white);
   margin-top: 2.5rem;
   text-align: right;
 }
@@ -54,12 +55,37 @@
 .message {
   width: 533px;
   height: 75px;
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   font: normal normal normal 18px/24px Segoe UI;
   text-align: right;
   padding: 1rem;
   align-self: flex-end;
   margin: 1.5rem;
   border-radius: 5px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 1rem;
+}
+
+.triangle-left {
+  border-right: 17px solid var(--color-white);
+}
+
+.triangle-right {
+  border-left: 17px solid var(--color-white);
+}
+
+.logo-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-right {
+  transform: rotate(-179deg);
 }
