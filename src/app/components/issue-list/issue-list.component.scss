@@ -3,8 +3,9 @@
   margin: 0 auto;
   background: var(--color-grey-dark-1) 0% 0% no-repeat padding-box;
   width: 643px;
-  height: 465px;
+  height: 520px;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 .continer-list {
@@ -37,7 +38,7 @@
 .first-span {
   width: 14.8rem;
   text-align: right;
-  font: normal normal normal 14px/57px Segoe UI;
+  font: normal normal normal 18px/57px Segoe UI;
   letter-spacing: 1.4px;
   color: var(--color-white);
   text-transform: capitalize;
@@ -46,7 +47,7 @@
 .second-span {
   width: 37.7rem;
   text-align: right;
-  font: normal normal bold 18px/58px Segoe UI;
+  font: normal normal normal 18px/58px Segoe UI;
   letter-spacing: 1.8px;
   color: var(--color-white);
   text-transform: capitalize;
@@ -190,6 +191,7 @@ input:checked + .slider:before {
 
 input:checked + .slider .on {
   display: block;
+  left: 36%;
 }
 
 input:checked + .slider .off {

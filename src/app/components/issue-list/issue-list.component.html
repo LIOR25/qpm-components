@@ -11,8 +11,8 @@
       <label for="togBtn" class="switch">
         <input type="checkbox" id="togBtn" (click)="showIssues('test')">
         <div class="slider round">
-          <span class="on">All</span>
-          <span class="off"></span>
+          <span class="on">Open</span>
+          <span class="off">All</span>
         </div>
       </label>
 
@@ -26,9 +26,15 @@
       <span class="first-span">{{issue.name}}</span>
       <span class="second-span">{{issue.name2}}</span>
     </div>
-    <div class="list" id="test">
+    <div class="list">
       <svg class="logo-icon small-red-flame">
         <use xlink:href="../../assets/sprite.svg#icon-small-red-flame"></use>
+      </svg>
+      <span class="first-span">2070</span>
+      <span class="second-span">תלונות: פניות הציבור</span>
+    </div>
+    <div class="list" id="test">
+      <svg class="logo-icon">
       </svg>
       <span class="first-span">2070</span>
       <span class="second-span">תלונות: פניות הציבור</span>
