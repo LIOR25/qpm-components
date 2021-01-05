@@ -6,54 +6,22 @@
 </div>
 
 <div class="content" role="main">
-
-  <!-- Choose Component -->
   <h2>Choose Component</h2>
-
   <input type="hidden" #selection>
-
   <div class="card-container">
     <div class="card card-small" [routerLink]="['/list']">
       <span>List Component</span>
     </div>
-
     <div class="card card-small" [routerLink]="['/list2']">
       <span>List2 Component</span>
     </div>
-
-    <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span>Add</span>
+    <div class="card card-small" [routerLink]="['/popup']">
+      <span>Popup</span>
     </div>
-
     <div class="card card-small" [routerLink]="['/qptab']">
       <span>TABS</span>
     </div>
-
-    <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span> Tests</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span>Build </span>
-    </div>
   </div>
-
-
-
-
-
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
     viewBox="0 0 2611.084 485.677">
