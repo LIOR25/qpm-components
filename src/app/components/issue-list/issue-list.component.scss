@@ -10,7 +10,7 @@
 .continer-list {
   height: 311px;
   width: 643px;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .continer-list {
@@ -68,6 +68,13 @@
   position: relative;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 //////////////////////////////////
 
 .input-logo {
@@ -76,6 +83,7 @@
   width: 629px;
   flex-direction: row-reverse;
   margin-top: 3rem;
+  height: 102px;
 }
 
 input {
@@ -112,4 +120,86 @@ input {
   margin: -5rem;
   margin-left: 5rem;
   position: absolute;
+}
+
+///////////////////////////////////
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-grey-light-2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+
+.on {
+  display: none;
+}
+
+.on,
+.off {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  font-family: Segoe UI, sans-serif;
+}
+
+input:checked + .slider .on {
+  display: block;
+}
+
+input:checked + .slider .off {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

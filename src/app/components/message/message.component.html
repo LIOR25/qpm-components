@@ -1,17 +1,17 @@
 <div class="message-conteinar">
   <div class="message-btn-conteinar">
-    <button class="btn btn-left">
+    <button class="btn btn-left" (click)="showMessage()">
       <div class="triangle triangle-left"></div>
     </button>
-    <button class="btn btn-right">
+    <button class="btn btn-right" (click)="fowerdMessage()">
       <div class="triangle triangle-right"></div>
     </button>
     <div class="message-header">
-      <span class="message-date">2020-07-29 13:43:35 </span>
-      <div class="message-name">מפקח ראשי - אריה</div>
+      <span class="message-date">{{messages[i].date}}</span>
+      <div class="message-name">{{messages[i].role}}</div>
     </div>
     <div class="message">
-      <div>היום ביליתי רוב הזמן בפרויקט מתחם הספורטאים. הכל התנהל כשורה</div>
+      <div>{{messages[i].message}}</div>
     </div>
   </div>
 </div>

@@ -6,8 +6,16 @@
       </svg>
       <div class="numberCircle">5</div>
     </div>
-    <form>
+    <form class="form">
       <input type="text" placeholder="חפש">
+      <label for="togBtn" class="switch">
+        <input type="checkbox" id="togBtn" (click)="showIssues('test')">
+        <div class="slider round">
+          <span class="on">All</span>
+          <span class="off"></span>
+        </div>
+      </label>
+
     </form>
   </div>
   <div class="continer-list">
@@ -18,7 +26,7 @@
       <span class="first-span">{{issue.name}}</span>
       <span class="second-span">{{issue.name2}}</span>
     </div>
-    <div class="list">
+    <div class="list" id="test">
       <svg class="logo-icon small-red-flame">
         <use xlink:href="../../assets/sprite.svg#icon-small-red-flame"></use>
       </svg>

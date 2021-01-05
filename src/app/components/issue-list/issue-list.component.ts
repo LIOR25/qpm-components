@@ -9,4 +9,12 @@ export class IssueListComponent implements OnInit {
   @Input() data;
   constructor() { }
   ngOnInit() { }
+
+  showIssues(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'flex')
+      e.style.display = 'none';
+    else
+      e.style.display = 'flex';
+  }
 }
