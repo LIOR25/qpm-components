@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { PopupComponent } from "../popup/popup.component";
 
 @Component({
   selector: 'app-list2',
@@ -6,6 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ['./list2.component.scss']
 })
 export class List2Component implements OnInit {
+  @ViewChild('popup', { static: false }) popup: PopupComponent
+
   constructor() { }
   ngOnInit() { }
+
+  openPopup() {
+    this.popup.open();
+  }
 }

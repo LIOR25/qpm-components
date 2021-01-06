@@ -1,6 +1,6 @@
 <div class="qp">
   <div class="qp__list">
-    <div class="logo-box">
+    <div class="logo-box" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-Asset-3"></use>
         <text x="50%" y="50%" text-anchor="middle" stroke="white" font-size="large" dy=".3em">12</text>
@@ -10,7 +10,7 @@
         <p class="qp__num">20200804-150540</p>
       </div>
     </div>
-    <div class="logo-box">
+    <div class="logo-box" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-Asset-4"></use>
         <text x="50%" y="50%" text-anchor="middle" stroke="white" font-size="large" dy=".3em">12</text>
@@ -20,7 +20,7 @@
         <p class="qp__num">20200804-150540</p>
       </div>
     </div>
-    <div class="logo-box">
+    <div class="logo-box" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-Asset-5"></use>
         <text x="50%" y="50%" text-anchor="middle" stroke="white" font-size="large" dy=".3em">12</text>
@@ -30,7 +30,7 @@
         <p class="qp__num">20200804-150540</p>
       </div>
     </div>
-    <div class="logo-box">
+    <div class="logo-box" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-Asset-6"></use>
         <text x="50%" y="50%" text-anchor="middle" stroke="white" font-size="large" dy=".3em">12</text>
@@ -40,7 +40,7 @@
         <p class="qp__num">20200804-150540</p>
       </div>
     </div>
-    <div class="logo-box">
+    <div class="logo-box" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-Asset-7"></use>
         <text x="50%" y="50%" text-anchor="middle" stroke="white" font-size="large" dy=".3em">12</text>
@@ -52,3 +52,6 @@
     </div>
   </div>
 </div>
+
+
+<app-popup #popup></app-popup>

@@ -13,6 +13,7 @@ import { List2Component } from './components/list2/list2.component';
 import { InfoTabComponent } from './info-tab/info-tab.component';
 import { MessageComponent } from './components/message/message.component';
 import { IssueListComponent } from './components/issue-list/issue-list.component';
+import { PopupComponent } from './components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IssueListComponent } from './components/issue-list/issue-list.component
     List2Component,
     InfoTabComponent,
     MessageComponent,
-    IssueListComponent
+    IssueListComponent,
+    PopupComponent
 
   ],
   imports: [
