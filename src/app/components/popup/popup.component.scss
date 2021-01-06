@@ -1,0 +1,68 @@
+.popup-message-conteinar {
+  width: 643px;
+  height: 314px;
+  background: var(--color-grey-dark-1) 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 5px;
+}
+
+.border-red {
+  border-right: 9px solid #ff0000;
+}
+
+.border-green {
+  border-right: 9px solid #30e649;
+  height: 475px;
+}
+
+.popup-message-header {
+  // display: flex;
+  // flex-direction: column;
+  // width: 2px;
+  height: 65px;
+  color: var(--color-white);
+  margin-top: 2.5rem;
+  text-align: right;
+  font: normal normal normal 18px/24px Segoe UI;
+  padding-top: 2rem;
+  margin-right: 2rem;
+}
+
+.popup-message {
+  // width: 612px;
+  height: 175px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font: normal normal normal 18px/24px Segoe UI;
+  text-align: right;
+  padding: 1rem;
+  align-self: flex-end;
+  margin: 1.5rem;
+  border-radius: 5px;
+}
+
+.pictuers {
+  height: 344px;
+}
+
+.popup-message-content {
+  margin-top: 3rem;
+}
+
+.pictures-container {
+  width: 463px;
+  height: 164px;
+  // background-color: honeydew;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.img,
+.img3 {
+  margin-left: 2rem;
+}
+
+.img3 {
+  margin-right: 2rem;
+}
