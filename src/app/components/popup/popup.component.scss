@@ -17,9 +17,6 @@
 }
 
 .popup-message-header {
-  // display: flex;
-  // flex-direction: column;
-  // width: 2px;
   height: 65px;
   color: var(--color-white);
   margin-top: 2.5rem;
@@ -30,7 +27,6 @@
 }
 
 .popup-message {
-  // width: 612px;
   height: 175px;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -65,4 +61,14 @@
 
 .img3 {
   margin-right: 2rem;
+}
+
+.heading-4 {
+  font: normal normal 22px/58px Segoe UI;
+  letter-spacing: 1.4px;
+  padding-left: 13rem;
+
+  &--light {
+    color: var(--color-grey-light-1);
+  }
 }

@@ -1,4 +1,7 @@
-<div class="popup" id="popup">
+<div class="popup" #popup>
+  <div class="popup__right" (click)="close()">
+    <a class="popup__close">&times;</a>
+  </div>
   <div class="popup-content">
     <div class="popup-header">
       <div class="popup-logo-box">
@@ -6,34 +9,37 @@
           <use xlink:href="../../assets/sprite.svg#icon-Asset-1"></use>
         </svg>
         <div class="popup-header__details">
-          <h4 class="heading-4 heading-4--light">מתחם הספורטאים</h4>
-          <p class="popup-header__num">1235</p>
+          <h4 class="heading-4 heading-4--light">1235</h4>
+          <p class="popup-header__num">מתחם הספורטאים</p>
         </div>
       </div>
     </div>
   </div>
-
   <div class="popup-message-conteinar border-red">
     <div class="popup-message-header">
-      hgjhgjhgjhghjghjgjhgjhgjh
+      הקבלן חבצע נחקוי קירות, רצפות ותקרות של כל השוחות שיש לשקם באישור של המפקח
     </div>
     <div class="popup-message">
       <div class="popup-message-sub-header">
-        lior
+        הערות של המפקח
       </div>
-      <div class="popup-message-content">gfgfgfgf</div>
+      <div class="popup-message-content">
+        הקבלן חבצע נחקוי קירות, רצפות ותקרות של כל השוחות שיש לשקם באישור של המפקח
+      </div>
     </div>
   </div>
 
   <div class="popup-message-conteinar border-green">
     <div class="popup-message-header">
-      hgjhgjhgjhghjghjgjhgjhgjh
+      הקבלן חבצע נחקוי קירות, רצפות ותקרות של כל השוחות שיש לשקם באישור של המפקח
     </div>
     <div class="popup-message pictuers">
       <div class="popup-message-sub-header">
-        lior
+        הערות של המפקח
       </div>
-      <div class="popup-message-content">gfgfgfgf</div>
+      <div class="popup-message-content">
+        הקבלן חבצע נחקוי קירות, רצפות ותקרות של כל השוחות שיש לשקם באישור של המפקח
+      </div>
       <div class="pictures-container">
         <img class="img" src="../../../assets/img/Image.png" alt="img">
         <img class="img" src="../../../assets/img/Image.png" alt="img">

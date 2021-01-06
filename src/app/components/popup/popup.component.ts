@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 
 @Component({
   selector: 'app-popup',
@@ -6,6 +6,16 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ['./popup.component.scss']
 })
 export class PopupComponent implements OnInit {
+  @ViewChild('popup', { static: false }) popup: ElementRef;
+
   constructor() { }
   ngOnInit() { }
+
+  open() {
+    this.popup.nativeElement.style.display = 'block';
+  }
+
+  close() {
+    this.popup.nativeElement.style.display = 'none';
+  }
 }
