@@ -1,6 +1,7 @@
 .popup {
   width: 684px;
-  height: 100vh;
+  height: 80%;
+
   background: #29333f 0% 0% no-repeat padding-box;
   border-radius: 5px;
 
@@ -8,9 +9,9 @@
   position: fixed;
   z-index: 1;
   left: 82px;
-  top: 38px;
+  top: 108px;
   overflow: auto;
-  // background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  z-index: 9999;
 
   &__right {
     width: 66.6666667%;

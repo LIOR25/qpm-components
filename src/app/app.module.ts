@@ -14,6 +14,7 @@ import { InfoTabComponent } from './info-tab/info-tab.component';
 import { MessageComponent } from './components/message/message.component';
 import { IssueListComponent } from './components/issue-list/issue-list.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PopupComponent } from './components/popup/popup.component';
     InfoTabComponent,
     MessageComponent,
     IssueListComponent,
-    PopupComponent
+    PopupComponent,
+    CarouselComponent
 
   ],
   imports: [

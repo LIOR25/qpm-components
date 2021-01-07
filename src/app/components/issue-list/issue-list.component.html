@@ -9,7 +9,7 @@
     <form class="form">
       <input type="text" placeholder="חפש">
       <label for="togBtn" class="switch">
-        <input type="checkbox" id="togBtn" (click)="showIssues('test')">
+        <input type="checkbox" id="togBtn" (click)="showIssues()">
         <div class="slider round">
           <span class="on">Open</span>
           <span class="off">All</span>
@@ -19,13 +19,35 @@
     </form>
   </div>
   <div class="continer-list">
-    <div class="list" *ngFor="let issue of data">
+    <div class="list" id="issue1">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
       </svg>
-      <span class="first-span">{{issue.name}}</span>
-      <span class="second-span">{{issue.name2}}</span>
+      <span class="first-span">1011</span>
+      <span class="second-span">תכנון: חוסר בסעיפים בכתב הכמויות </span>
     </div>
+    <div class="list" id="issue2">
+      <svg class="logo-icon">
+        <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
+      </svg>
+      <span class="first-span">1020</span>
+      <span class="second-span">משמעת: קללות </span>
+    </div>
+    <div class="list" id="issue3">
+      <svg class="logo-icon">
+        <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
+      </svg>
+      <span class="first-span">1055</span>
+      <span class="second-span">איכות ביצוע: אביזרים</span>
+    </div>
+    <div class="list" id="issue4">
+      <svg class="logo-icon">
+        <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
+      </svg>
+      <span class="first-span">1060</span>
+      <span class="second-span">איכות ביצוע: הנחת צנרת</span>
+    </div>
+
     <div class="list">
       <svg class="logo-icon small-red-flame">
         <use xlink:href="../../assets/sprite.svg#icon-small-red-flame"></use>
@@ -33,7 +55,7 @@
       <span class="first-span">2070</span>
       <span class="second-span">תלונות: פניות הציבור</span>
     </div>
-    <div class="list" id="test">
+    <div class="list">
       <svg class="logo-icon">
       </svg>
       <span class="first-span">2070</span>

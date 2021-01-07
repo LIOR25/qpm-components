@@ -10,11 +10,20 @@ export class IssueListComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
 
-  showIssues(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'flex')
-      e.style.display = 'none';
-    else
-      e.style.display = 'flex';
+  showIssues() {
+    var e = document.getElementById('issue1');
+    var e1 = document.getElementById('issue2');
+    var e2 = document.getElementById('issue3');
+    var e3 = document.getElementById('issue4');
+
+    let arr = [e, e1, e2, e3];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].style.display == 'none')
+        arr[i].style.display = 'flex';
+      else
+        arr[i].style.display = 'none';
+    }
   }
 }
+

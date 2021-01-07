@@ -41,10 +41,14 @@
         הקבלן חבצע נחקוי קירות, רצפות ותקרות של כל השוחות שיש לשקם באישור של המפקח
       </div>
       <div class="pictures-container">
-        <img class="img" src="../../../assets/img/Image.png" alt="img">
-        <img class="img" src="../../../assets/img/Image.png" alt="img">
-        <img class="img3" src="../../../assets/img/Image.png" alt="img">
+        <img (click)="openCarousel()" class="img" src="../../../assets/img/Image.png" alt="img">
+        <img (click)="openCarousel()" class="img" src="../../../assets/img/Image.png" alt="img">
+        <img (click)="openCarousel()" class="img3" src="../../../assets/img/Image.png" alt="img">
       </div>
     </div>
   </div>
 </div>
+
+
+
+<app-carousel #carousel></app-carousel>
