@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, ViewChild } from "@angular/core";
+import { PopupIssueComponent } from "../popup-issue/popup-issue.component";
 
 @Component({
   selector: 'app-issue',
@@ -6,6 +7,8 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ['./issue-list.component.scss']
 })
 export class IssueListComponent implements OnInit {
+  @ViewChild('popup', { static: false }) popup: PopupIssueComponent
+
   @Input() data;
   constructor() { }
   ngOnInit() { }
@@ -24,6 +27,10 @@ export class IssueListComponent implements OnInit {
       else
         arr[i].style.display = 'none';
     }
+  }
+
+  openPopup() {
+    this.popup.open();
   }
 }
 
