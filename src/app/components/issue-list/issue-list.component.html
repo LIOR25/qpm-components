@@ -19,28 +19,28 @@
     </form>
   </div>
   <div class="continer-list">
-    <div class="list" id="issue1">
+    <div class="list" id="issue1" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
       </svg>
       <span class="first-span">1011</span>
       <span class="second-span">תכנון: חוסר בסעיפים בכתב הכמויות </span>
     </div>
-    <div class="list" id="issue2">
+    <div class="list" id="issue2" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
       </svg>
       <span class="first-span">1020</span>
       <span class="second-span">משמעת: קללות </span>
     </div>
-    <div class="list" id="issue3">
+    <div class="list" id="issue3" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
       </svg>
       <span class="first-span">1055</span>
       <span class="second-span">איכות ביצוע: אביזרים</span>
     </div>
-    <div class="list" id="issue4">
+    <div class="list" id="issue4" (click)="openPopup()">
       <svg class="logo-icon">
         <use xlink:href="../../assets/sprite.svg#icon-statusAsset-98"></use>
       </svg>
@@ -48,14 +48,14 @@
       <span class="second-span">איכות ביצוע: הנחת צנרת</span>
     </div>
 
-    <div class="list">
+    <div class="list" (click)="openPopup()">
       <svg class="logo-icon small-red-flame">
         <use xlink:href="../../assets/sprite.svg#icon-small-red-flame"></use>
       </svg>
       <span class="first-span">2070</span>
       <span class="second-span">תלונות: פניות הציבור</span>
     </div>
-    <div class="list">
+    <div class="list" (click)="openPopup()">
       <svg class="logo-icon">
       </svg>
       <span class="first-span">2070</span>
@@ -63,3 +63,6 @@
     </div>
   </div>
 </div>
+
+
+<app-popyp-issue #popup></app-popyp-issue>

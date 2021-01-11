@@ -17,6 +17,15 @@
   margin-bottom: 3rem;
 }
 
+.border-gray,
+.border-gray2 {
+  border-right: 9px solid var(--color-grey-light-1);
+}
+
+.border-gray2 {
+  height: 475px;
+}
+
 .popup-message-header {
   height: 65px;
   color: var(--color-white);

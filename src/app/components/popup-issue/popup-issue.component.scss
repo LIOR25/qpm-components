@@ -1,0 +1,94 @@
+#heading-4__sub {
+  padding-left: 6rem;
+}
+
+.popup-header__num {
+  margin-top: -1.5rem;
+  font-weight: bold;
+}
+
+.popup-logo-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon {
+  fill: var(--color-green);
+}
+
+.yellow_flame {
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.heading-4 {
+  font: normal normal 2.2rem/5.8rem Segoe UI;
+  letter-spacing: 1.4px;
+  padding-left: 13rem;
+
+  &--light {
+    color: var(--color-grey-light-1);
+  }
+}
+
+.stepper-container {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.stepper {
+  width: 50%;
+  margin-top: 9rem;
+}
+
+.issue-list {
+  margin-top: 3rem;
+  width: 64.3rem;
+  margin-left: 2rem;
+
+  &-header {
+    background-color: var(--color-red);
+    text-align: right;
+    font-size: 2rem;
+    color: var(--color-white);
+    padding-right: 6rem;
+    height: 4.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+/////////////////////////////////// stepper
+
+.rpp-stepper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+
+  .rpp-stepper-divider {
+    align-self: center;
+    height: 3px;
+    background-color: var(--color-white);
+  }
+
+  .rpp-stepper-item {
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    font-size: 2.1rem;
+
+    &.rpp-stepper-item-content {
+      display: none;
+    }
+
+    .rpp-stepper-item-content {
+      text-align: center;
+      align-self: center;
+    }
+  }
+}

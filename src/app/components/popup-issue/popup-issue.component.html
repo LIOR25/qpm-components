@@ -1,0 +1,66 @@
+<div class="popup" #popup>
+  <div class="popup__right" (click)="close()">
+    <a class="popup__close">&times;</a>
+  </div>
+  <div class="popup-content">
+    <div class="popup-header">
+      <div class="popup-logo-box">
+        <svg class="popup-logo-icon yellow_flame">
+          <use xlink:href="../../assets/sprite.svg#icon-yellow_flame"></use>
+        </svg>
+        <div class="popup-header__details">
+          <h4 class="heading-4 heading-4--light">1235</h4>
+          <p class="popup-header__num">מתחם הספורטאים</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stepper-container">
+    <div class="popup-sub-header">
+      <div class="popup-header__details">
+        <h4 class="heading-4 heading-4--light" id="heading-4__sub">אריה</h4>
+        <p class="popup-header__num">04/08/2020</p>
+      </div>
+    </div>
+    <div class="stepper">
+      <div class="rpp-stepper">
+        <div class="rpp-stepper-item rpp-active">
+          <span class="rpp-stepper-item-content">
+            <svg class="popup-logo-icon">
+              <use class="icon" xlink:href="../../assets/sprite.svg#icon-Layer-2-2"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="rpp-stepper-divider"></div>
+        <div class="rpp-stepper-item rpp-active">
+          <span class="rpp-stepper-item-content">
+            <svg class="popup-logo-icon">
+              <use xlink:href="../../assets/sprite.svg#icon-Layer-2"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="rpp-stepper-divider"></div>
+        <div class="rpp-stepper-item rpp-active">
+          <span class="rpp-stepper-item-content">
+            <svg class="popup-logo-icon">
+              <use xlink:href="../../assets/sprite.svg#icon-Layer-2-1"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-list">
+    <div class="issue-list-header">
+      פרטי הנושא
+    </div>
+    <app-info [data]='infoArr'></app-info>
+  </div>
+  <div class="issue-list">
+    <div class="issue-list-header">
+      פרטי הנושא
+    </div>
+    <app-info [data]='infoArr'></app-info>
+  </div>
+</div>
