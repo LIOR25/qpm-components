@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 
 
 @Component({
-  selector: 'app-qp',
-  templateUrl: './qp-tab.component.html',
-  styleUrls: ['./qp-tab.component.scss']
+  selector: 'app-tabs',
+  templateUrl: './tabs.component.html',
+  styleUrls: ['./tabs.component.scss']
 })
-export class QpTabComponent implements OnInit {
+export class TabsComponent implements OnInit {
   qpArr;
   infoArr;
   infoArr2;

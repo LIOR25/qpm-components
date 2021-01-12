@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { QpTabComponent } from './qp-tab/qp-tab.component';
+import { TabsComponent } from './tabs/tabs.component';
 import { List2Component } from './components/list2/list2.component';
 import { InfoTabComponent } from './info-tab/info-tab.component';
 import { MessageComponent } from './components/message/message.component';
@@ -22,7 +22,7 @@ import { PopupIssueComponent } from './components/popup-issue/popup-issue.compon
     AppComponent,
     HomePageComponent,
     ListComponent,
-    QpTabComponent,
+    TabsComponent,
     List2Component,
     InfoTabComponent,
     MessageComponent,
