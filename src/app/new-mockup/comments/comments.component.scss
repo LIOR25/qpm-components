@@ -1,6 +1,5 @@
-.popup-message-conteinar {
-  width: 643px;
-  height: 314px;
+.comment-conteinar {
+  height: 20.5rem;
   background: var(--color-grey-dark-1) 0% 0% no-repeat padding-box;
   margin: 0 auto;
   margin-top: 4rem;
@@ -13,34 +12,34 @@
 
 .border-green {
   border-right: 9px solid var(--color-green);
-  height: 475px;
+  height: 41rem;
   margin-bottom: 3rem;
 }
 
 .border-gray,
 .border-gray2 {
-  border-right: 9px solid var(--color-grey-light-1);
+  border-right: 9px solid var(--color-grey-light-2);
 }
 
 .border-gray2 {
-  height: 475px;
+  height: 32.3rem;
 }
 
-.popup-message-header {
-  height: 65px;
+.comment-header {
+  height: 5.1rem;
   color: var(--color-white);
   margin-top: 2.5rem;
   text-align: right;
-  font: normal normal normal 18px/24px Segoe UI;
-  padding-top: 2rem;
+  font: normal normal normal 1.2rem/2.4rem Segoe UI;
+  padding-top: 1rem;
   margin-right: 2rem;
 }
 
-.popup-message {
-  height: 175px;
+.comment {
+  height: 8.7rem;
   background-color: var(--color-black);
   color: var(--color-white);
-  font: normal normal normal 18px/24px Segoe UI;
+  font: normal normal normal 1.2rem/2.4rem Segoe UI;
   text-align: right;
   padding: 1rem;
   align-self: flex-end;
@@ -49,35 +48,26 @@
 }
 
 .pictuers {
-  height: 344px;
+  height: fit-content;
 }
 
-.popup-message-content {
-  margin-top: 3rem;
+.comment-content {
+  margin-top: 1rem;
 }
 
 .pictures-container {
-  width: 463px;
-  height: 164px;
+  width: 26.2rem;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .img,
 .img3 {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .img3 {
-  margin-right: 2rem;
-}
-
-.heading-4 {
-  font: normal normal 22px/58px Segoe UI;
-  letter-spacing: 1.4px;
-  padding-left: 13rem;
-
-  &--light {
-    color: var(--color-grey-light-1);
-  }
+  margin-top: 1rem;
 }

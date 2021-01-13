@@ -45,7 +45,7 @@ img {
 
 .tab {
   font: normal normal 2.5rem/5.8rem Segoe UI;
-  color: white;
+  color: var(--color-white);
 }
 
 .tab label {
@@ -90,4 +90,101 @@ img {
 
 [type="radio"]:checked ~ label ~ .content {
   z-index: 1;
+}
+
+input {
+  align-self: center;
+  width: 29.1rem;
+  height: 4.4rem;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+
+  @include respond(laptop) {
+    font-size: 1rem;
+    width: 16.1rem;
+  }
+}
+
+::placeholder {
+  color: var(--color-grey-light-3);
+}
+
+///////////////////////////////////// panel
+
+summary {
+  background-color: var(--color-secondary);
+  position: relative;
+  padding-left: 2rem;
+  list-style-image: url("./../../../assets/svg/chevron-small-up.svg");
+
+  @include respond(laptop) {
+    padding-left: 1rem;
+  }
+}
+
+summary::-webkit-details-marker {
+  color: var(--color-white);
+  font-size: 145%;
+  margin-left: 2rem;
+  position: absolute;
+  left: 25rem;
+  top: 2rem;
+  background: url("./../../../assets/svg/chevron-small-up.svg");
+  color: transparent;
+
+  @include respond(laptop) {
+    margin-left: 1.9rem;
+    left: 17rem;
+  }
+}
+
+summary:focus::-webkit-details-marker {
+  background: url("./../../../assets/svg/chevron-small-down.svg");
+}
+
+summary:focus {
+  outline-style: none;
+}
+
+article > details > summary {
+  font-size: 2.3rem;
+  margin-top: 2.2rem;
+
+  @include respond(laptop) {
+    font-size: 1.3rem;
+  }
+}
+
+details summary {
+  display: flex;
+}
+
+details details summary {
+  font-size: 1.6rem;
+  height: 7.5rem;
+
+  @include respond(laptop) {
+    font-size: 1.1rem;
+  }
+}
+
+span {
+  position: absolute;
+  top: 2rem;
+  padding-left: 4rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 2.7rem;
+  align-self: center;
+  padding-right: 1rem;
+}
+
+.qp {
+  background-color: var(--color-primary);
 }

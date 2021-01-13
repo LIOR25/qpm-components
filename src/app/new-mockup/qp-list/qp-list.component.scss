@@ -1,0 +1,80 @@
+@import "../../styles/abstracts/mixins";
+
+summary {
+  background-color: var(--color-secondary);
+  position: relative;
+  padding-left: 2rem;
+  list-style-image: url("./../../../assets/svg/chevron-small-up.svg");
+
+  @include respond(laptop) {
+    padding-left: 1rem;
+  }
+}
+
+summary::-webkit-details-marker {
+  color: var(--color-white);
+  font-size: 145%;
+  margin-left: 2.2rem;
+  position: absolute;
+  left: 25rem;
+  top: 2rem;
+  background: url("./../../../assets/svg/chevron-small-up.svg");
+  color: transparent;
+
+  @include respond(laptop) {
+    margin-left: 1.9rem;
+    left: 17rem;
+  }
+}
+
+summary:focus::-webkit-details-marker {
+  background: url("./../../../assets/svg/chevron-small-down.svg");
+}
+
+summary:focus {
+  outline-style: none;
+}
+
+details summary {
+  display: flex;
+}
+
+details details summary {
+  font-size: 1.6rem;
+
+  @include respond(laptop) {
+    font-size: 1.1rem;
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 2.7rem;
+  align-self: center;
+  padding-right: 1rem;
+  margin-right: 8rem;
+}
+
+.qp {
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.qp-svg-container {
+  justify-content: space-between;
+  width: 17.6rem;
+}
+
+.qp-svg {
+  margin-right: 0;
+}
+
+.logo-icon {
+  width: 3rem;
+  height: 5.7rem;
+}
+
+.small-red-flame {
+  height: 1.7rem;
+  margin-top: 2rem;
+}
