@@ -7,7 +7,7 @@ summary {
   list-style-image: url("./../../../assets/svg/chevron-small-up.svg");
 
   @include respond(laptop) {
-    padding-left: 1rem;
+    padding-left: 0;
   }
 }
 
@@ -22,8 +22,8 @@ summary::-webkit-details-marker {
   color: transparent;
 
   @include respond(laptop) {
-    margin-left: 1.9rem;
-    left: 17rem;
+    margin-left: 1rem;
+    left: 15rem;
   }
 }
 
@@ -43,7 +43,7 @@ details details summary {
   font-size: 1.6rem;
 
   @include respond(laptop) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -53,6 +53,11 @@ details details summary {
   align-self: center;
   padding-right: 1rem;
   margin-right: 8rem;
+
+  @include respond(laptop) {
+    height: 2.2rem;
+    margin-right: 3rem;
+  }
 }
 
 .qp {
@@ -63,6 +68,10 @@ details details summary {
 .qp-svg-container {
   justify-content: space-between;
   width: 17.6rem;
+
+  @include respond(laptop) {
+    width: 12.6rem;
+  }
 }
 
 .qp-svg {
